@@ -7,7 +7,7 @@
       if(location.hash === "#!/stealingyourhistory") {
             history.replaceState(null, document.title, location.pathname);
             setTimeout(function(){
-              location.replace("http://www.kiumed.com.br/back");
+              location.replace("http://www.kiumed.com.br/");
             },0);
       }
     }, false);
